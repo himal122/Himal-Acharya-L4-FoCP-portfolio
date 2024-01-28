@@ -62,10 +62,10 @@ def execute_login():
 
         # Checks if the provided username and password is correct
         if login(username, password):
-            print("Login successful!")
+            print("Access granted.")
             break
         else:
-            print("Login failed. Invalid username or password.")
+            print("Access denied.")
 
 def execute_password_change():
     # Prompts the user to enter the username to change the password
