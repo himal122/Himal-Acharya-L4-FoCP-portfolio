@@ -44,8 +44,9 @@ def add_new_user():
 
     # Prompts the user to enter a password and validates
     while True:
-        password = encryption(getpass.getpass("Enter password: "))
+        password = input("Enter password: ")
         if len(password) >= 8:
+            password = encryption(password)
             break
         else:
             print("Password must be at least 8 characters long.")
