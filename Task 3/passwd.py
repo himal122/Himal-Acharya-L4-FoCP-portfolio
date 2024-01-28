@@ -35,5 +35,5 @@ def change_password(username, current_password, new_password):
     if password_changed:
         print("Password changed.")
     else:
-        print("User not found or current password is incorrect. Nothing changed.")
+        print("Current password is incorrect. Nothing changed.")
         
